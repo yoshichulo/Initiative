@@ -9,12 +9,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { IonicColorPickerModule } from 'ionic-color-picker';
+import { ColorPickerModule } from "ngx-color-picker";
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicColorPickerModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    ColorPickerModule],
   providers: [
     StatusBar,
     SplashScreen,

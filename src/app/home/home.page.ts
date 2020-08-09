@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController } from '@ionic/angular';
+import {ColorPickerModule} from "ngx-color-picker";
 
 @Component({
   selector: 'app-home',
@@ -9,15 +10,17 @@ import { NavController, AlertController } from '@ionic/angular';
 
 export class HomePage {
   public entityArray = [
+      /*
         {'initiative': 15, 'name': 'Slime'},
-        {'initiative': 4, 'name': 'Vampire'},
-        {'initiative': 12, 'name': 'Archer thief'}
+        {'initiative': 12, 'name': 'Archer thief'},
+        {'initiative': 4, 'name': 'Vampire'}
+       */
       ];
 
   timeoutHandler: number;
+  color: any;
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {}
-
 
   public editEntity(currentEntity, index) {
     this.alertCtrl.create({
@@ -85,6 +88,10 @@ export class HomePage {
         }
       ]
     }).then(alert => alert.present());
+  }
+
+  public onColorChange(event){
+    console.log(event)
   }
 
   public roll(maxValue) {

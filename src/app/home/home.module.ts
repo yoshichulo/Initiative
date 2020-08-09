@@ -6,13 +6,16 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { ColorPickerModule } from "ngx-color-picker";
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    ColorPickerModule
   ],
   declarations: [HomePage]
 })
