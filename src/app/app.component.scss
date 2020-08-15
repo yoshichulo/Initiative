@@ -1,0 +1,31 @@
+.app-title {
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px;
+  border-left: 0;
+  width: 85%;
+  margin: auto auto 15px auto;
+  padding: 20px 0 8px 8px;
+}
+
+.initiative {
+  width: 50px;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
+  color: white;
+}
+
+ion-content {
+  background-color: #0d0d0d;
+  --ion-background-color: #0d0d0d;
+}
+
+ion-item {
+  --border-color: grey;
+}
