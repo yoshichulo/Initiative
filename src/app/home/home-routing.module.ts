@@ -25,6 +25,15 @@ const routes: Routes = [
           },
         ]
       },
+      {
+        path: 'dices',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/dices/dices.module').then( m => m.DicesPageModule)
+          },
+        ]
+      },
     ]
   }
 ];

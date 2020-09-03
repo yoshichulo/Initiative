@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="app-title">🎲 Dices</div>
+  <div style="width: 80%; margin: auto; color: white;">
+    <ion-list *ngFor="let entity of entityArray; let i = index">
+      <ion-item style="color: white;">
+        <ion-label (click)="editEntity(entity, i)">
+          <span class="initiative">{{ entity.initiative }}</span>{{ entity.name }}
+        </ion-label>
+        <ion-button fill="clear" color="danger" (click)="deleteEntity(i)">
+          <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </ion-list>
+    <div style="margin: 20px auto auto auto">
+      <ion-row>
+        <ion-col size="4"><img (click)="roll(20)" class="dice" src="../../../assets/img/d20.png"/></ion-col>
+        <ion-col size="4"><img (click)="roll(12)" class="dice" src="../../../assets/img/d12.png"/></ion-col>
+        <ion-col size="4"><img (click)="roll(10)" class="dice" src="../../../assets/img/d10.png"/></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4"><img (click)="roll(8)" class="dice" src="../../../assets/img/d8.png"/></ion-col>
+        <ion-col size="4"><img (click)="roll(6)" class="dice" src="../../../assets/img/d6.png"/></ion-col>
+        <ion-col size="4"><img (click)="roll(4)" class="dice" src="../../../assets/img/d4.png"/></ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

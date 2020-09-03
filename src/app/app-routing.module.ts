@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home/initiative',
     pathMatch: 'full'
-  },
+  }
 ];
 
 @NgModule({

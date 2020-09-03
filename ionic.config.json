@@ -1,7 +1,8 @@
 {
   "name": "Initiative",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
