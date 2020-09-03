@@ -6,26 +6,6 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-    children: [
-      {
-        path: 'initiative',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../pages/initiative/initiative.module').then( m => m.InitiativePageModule)
-          },
-        ]
-      },
-      {
-        path: 'spellscontrol',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../pages/spellscontrol/spellscontrol.module').then( m => m.SpellscontrolPageModule)
-          },
-        ]
-      },
-    ]
   }
 ];
 
